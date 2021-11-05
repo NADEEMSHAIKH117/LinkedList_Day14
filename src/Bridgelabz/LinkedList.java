@@ -4,7 +4,7 @@ public class LinkedList {
 	Node head;
 	Node tail;
 	
-	public void push(int data) {
+	public Node push(int data) {
 		Node newNode = new Node(data);
 		if (head == null) {
 			head = newNode;
@@ -13,7 +13,7 @@ public class LinkedList {
 			Node temp = head;
 			this.head = newNode;
 			newNode.next = temp;
-		}
+		}return newNode;
 	}
 	
 	public void print() {
@@ -38,6 +38,11 @@ public class LinkedList {
 	            tail = newNode;
 	        }
 	    }
+	 public void insertInBetween(Node previousNode ,Node newNode) {
+		 Node tempNode = previousNode.next;
+		 previousNode.next = newNode;
+		 newNode.next = tempNode;
+	 }
 	 
-	}    
+}    
 
