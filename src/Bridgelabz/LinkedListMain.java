@@ -10,6 +10,7 @@ public class LinkedListMain {
 		System.out.println("Press '1' to add the data at the start");
 		System.out.println("Press '2' to add the data at the end");
 		System.out.println("Press '3' to insert data inBetween");
+		System.out.println("press '4' to delete data of first node");
         switch (scanner.nextInt()) {
         	case 1:
         		Operations.addDataAtStart();
@@ -19,6 +20,9 @@ public class LinkedListMain {
         		break;
         	case 3:
         		Operations.insertInBetween();
+        		break;
+        	case 4:
+        		Operations.deleteFirstNode();
         		break;
         	}
         }

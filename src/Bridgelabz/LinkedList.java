@@ -44,5 +44,9 @@ public class LinkedList {
 		 newNode.next = tempNode;
 	 }
 	 
+	 public void pop() {
+		 this.head = this.head.next;
+	 }
+	 
 }    
 
