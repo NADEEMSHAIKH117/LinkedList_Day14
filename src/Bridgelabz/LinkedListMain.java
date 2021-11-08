@@ -14,6 +14,7 @@ public class LinkedListMain {
 		System.out.println("press '5' to delete data of last node");
 		System.out.println("press '6' to find index of 30 in linked list");
 		System.out.println("press '7' to Add data after the data");
+		System.out.println("press '8' to delete data after searching required data");
         switch (scanner.nextInt()) {
         	case 1:
         		Operations.addDataAtStart();
@@ -36,6 +37,8 @@ public class LinkedListMain {
         	case 7:
         		Operations.insertAfterSearchNode();
         		break;
+        	case 8:
+        		Operations.deleteAfterNodeAfterSearchNode();
            }
         }
         
